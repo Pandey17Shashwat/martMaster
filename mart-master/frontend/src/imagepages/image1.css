@@ -5,7 +5,6 @@ html{
 font-size: 62.5%;
 }
 body{
-    height: 60vh;
     font: 1.6rem H elvetica,arial;
     margin: 0;
 }
@@ -16,7 +15,7 @@ a{
 a:hover{
     color: #f08040;
 }
-.grid-container{
+/*.grid-container{
     display: grid;
     grid-template-areas: 
     'header'
@@ -26,8 +25,9 @@ a:hover{
     grid-template-columns: 1fr;
     grid-template-rows: 5rem 1rem 1fr 5rem;
     height: 100%;
-}
+}*/
 header{
+    height: 8vh;
     grid-area: header;
     background-color: #203040;
     color: #ffffff;
@@ -51,11 +51,20 @@ header a:hover{
     width: 14vw;
 }
 footer{
+    height: 7vh;
     background-color: #203040;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffff;
+}
+nav{
+    height: 5vh;
+}
+main{
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
 }
 .mainaddress{
     display: flex;
@@ -129,45 +138,21 @@ nav a:hover{
  .signin a{
      margin: 4px;
  }
- 
-
-
-/*products section */
-.products ul{
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    /* width: 32vw; */
-    justify-content: center;
-}
-.products li{
-    flex: 0 1 30rem;
-    margin: 1rem;
-    margin-bottom: 0;
-    height: 42rem;
-    list-style-type: none;
-     /* border-top: 0.2rem #e0e0e0 solid; */
-}
-.product{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-}
-.products img {
-    max-height: 26rem;
-    max-width: 22rem;
-    margin-top: 2rem;
-}
-.product-name{
-    line-height: 2.2rem;
-}
-.product-brand{
-    font-size: 1.2rem;
-    color: #808080;
-}
-.product-price{
-   font-size: 2rem;
-}
+ .image img{
+     display: flex;
+     justify-content: left;
+     width: 45vw;
+     height: 78vh;
+ }
+ h1{
+     font-size: 4.8rem;
+     margin-bottom: 0;
+ }
+ .information button{
+     background-color: #203040;
+     color: #ff9900;
+     outline: oldlace;
+ }
+ .mrp{
+     margin-top: 3rem;
+ }
